@@ -7,7 +7,7 @@ public class CargoContainer<T> where T : DeliveryItem
     public void AddItem(T item)
     {
         items.Add(item);
-        Console.WriteLine($"Added: {item.TrackingNumber}. Type: {typeof(T).Name}");
+        Console.WriteLine($"Added: {item.TrackingNumber}.");
     }
 
     public double GetTotalCost()
